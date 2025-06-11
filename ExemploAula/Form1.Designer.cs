@@ -39,10 +39,10 @@
             // lbllogin
             // 
             lbllogin.AutoSize = true;
-            lbllogin.Font = new Font("Arial Narrow", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbllogin.Location = new Point(325, 54);
+            lbllogin.Font = new Font("Arial Narrow", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbllogin.Location = new Point(324, 42);
             lbllogin.Name = "lbllogin";
-            lbllogin.Size = new Size(59, 23);
+            lbllogin.Size = new Size(84, 31);
             lbllogin.TabIndex = 0;
             lbllogin.Text = "LOGIN";
             // 
@@ -69,28 +69,30 @@
             // txtuser
             // 
             txtuser.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtuser.Location = new Point(414, 136);
+            txtuser.Location = new Point(285, 133);
             txtuser.Name = "txtuser";
-            txtuser.Size = new Size(100, 26);
+            txtuser.Size = new Size(163, 26);
             txtuser.TabIndex = 3;
             // 
             // txtsenha
             // 
             txtsenha.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtsenha.Location = new Point(414, 184);
+            txtsenha.Location = new Point(285, 184);
             txtsenha.Name = "txtsenha";
-            txtsenha.Size = new Size(100, 26);
+            txtsenha.PasswordChar = '*';
+            txtsenha.Size = new Size(163, 26);
             txtsenha.TabIndex = 4;
             // 
             // btnlogin
             // 
             btnlogin.Font = new Font("Arial", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnlogin.Location = new Point(311, 343);
+            btnlogin.Location = new Point(285, 340);
             btnlogin.Name = "btnlogin";
             btnlogin.Size = new Size(163, 50);
             btnlogin.TabIndex = 5;
             btnlogin.Text = "Login";
             btnlogin.UseVisualStyleBackColor = true;
+            btnlogin.Click += btnlogin_Click;
             // 
             // Form1
             // 
@@ -104,7 +106,9 @@
             Controls.Add(lbluser);
             Controls.Add(lbllogin);
             Name = "Form1";
-            Text = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "LOGIN";
+            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
