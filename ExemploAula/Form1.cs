@@ -14,6 +14,9 @@ namespace ExemploAula
             MessageBox.Show("Usuario Logado com sucesso");
             txtsenha.Clear();
             txtuser.Clear();
+            frmmenu menu = new frmmenu();
+            Hide();
+            menu.Show();
             }
             else
             {
